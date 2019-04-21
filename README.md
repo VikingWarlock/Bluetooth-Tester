@@ -1,6 +1,6 @@
 # Bluetooth Tester
 
-If you have many bluetooth-based devices to test, it is so tiring to build application for each of them.
+If you have many bluetooth-based devices to test, it is so tiring to build applications for each of them.
 
 What if we can use only one application to test every bluetooth devices?
 
