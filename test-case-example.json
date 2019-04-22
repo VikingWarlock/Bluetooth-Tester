@@ -3,60 +3,78 @@
     "filter-service": "1816",
     "device-define": [
         {
-            "service":"180A",
-            "characteristic":[
+            "service": "180A",
+            "characteristic": [
                 {
-                    "uuid":"2A27",
-                    "name":"hardware info",
-                    "read-type":1,
-                    "write-type":0
-                },{
-                    "uuid":"2A28",
-                    "name":"software info",
-                    "read-type":1,
-                    "write-type":0
-                },{
-                    "uuid":"2A25",
-                    "name":"serial number",
-                    "read-type":1,
-                    "write-type":0
+                    "uuid": "2A27",
+                    "name": "hardware info",
+                    "read-type": 1,
+                    "write-type": 0
+                },
+                {
+                    "uuid": "2A28",
+                    "name": "software info",
+                    "read-type": 1,
+                    "write-type": 0
+                },
+                {
+                    "uuid": "2A25",
+                    "name": "serial number",
+                    "read-type": 1,
+                    "write-type": 0
                 }
             ]
         },
         {
-            "service":"1816",
-            "characteristic":[
+            "service": "1816",
+            "characteristic": [
                 {
-                    "uuid":"2A5B",
-                    "name":"data-characteristic",
-                    "read-type":3,
-                    "write-type":0
+                    "uuid": "2A5B",
+                    "name": "data-characteristic",
+                    "read-type": 3,
+                    "write-type": 0
                 }
             ]
-        },{
-            "service":"6e400001-b5a3-f393-e0a9-e50e24dcca9e",
-            "characteristic":[
+        },
+        {
+            "service": "6e400001-b5a3-f393-e0a9-e50e24dcca9e",
+            "characteristic": [
                 {
-                    "uuid":"6e400002-b5a3-f393-e0a9-e50e24dcca9e",
-                    "name":"sleep-characteristic",
-                    "read-type":2,
-                    "write-type":1
+                    "uuid": "6e400002-b5a3-f393-e0a9-e50e24dcca9e",
+                    "name": "sleep-characteristic",
+                    "read-type": 2,
+                    "write-type": 1
                 }
             ]
         }
     ],
     "test-case": [
         {
-            "type":0,
-            "steps":[
-                {}
-            ]
-        },{
-            "type":1,
-            "steps":[
-
+            "type": 0,
+            "external-file":"xxxx.js",
+            "steps": [
+                {
+                    "name": "hardware info",
+                    "delay": 200,
+                    "process":"xxxx()"
+                },
+                {
+                    "name": "software info",
+                    "delay": 200,
+                    "process":"xxxxx()"
+                },
+                {
+                    "name": "serial number",
+                    "delay": 200,
+                    "process":"xxxxx()"
+                }
             ],
-            "repeat":1
+            "repeat": 1
+        },
+        {
+            "type": 1,
+            "steps": [],
+            "repeat": 1
         }
     ]
 }

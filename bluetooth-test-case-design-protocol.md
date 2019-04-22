@@ -34,7 +34,7 @@ Value|Name|Description
 
 #### TEST TYPE
 
-I think there are 2 types of test is need in a Product Test: `RECORD` and `DATA CHECK`
+I think there are 2 types of test is need in a Product Test: `RECORD` , `DATA CHECK` and `OPERATION`
 
 RECORD: collect data and send it to server for record.
 
